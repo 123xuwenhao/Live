@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reg_card_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/reg_h_0.45"
+        app:layout_constraintEnd_toStartOf="@id/reg_v_0.95"
+        app:layout_constraintStart_toStartOf="@id/reg_v_0.05"
+        app:layout_constraintTop_toTopOf="@id/reg_h_0.05" />
+
+    <ImageView
+        android:id="@+id/reg_pic_user"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toTopOf="@id/reg_h_0.15"
+        app:layout_constraintEnd_toStartOf="@id/reg_v_0.25"
+        app:layout_constraintStart_toStartOf="@id/reg_v_0.05"
+        app:layout_constraintTop_toTopOf="@id/reg_h_0.05"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/reg_in_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:hint="请输入手机号"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="18dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/reg_pic_user"
+        app:layout_constraintStart_toStartOf="@id/reg_v_0.25"
+        app:layout_constraintTop_toTopOf="@id/reg_pic_user" />
+
+    <ImageView
+        android:id="@+id/reg_pic_valid"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toTopOf="@id/reg_h_0.25"
+        app:layout_constraintEnd_toStartOf="@id/reg_v_0.25"
+        app:layout_constraintStart_toStartOf="@id/reg_v_0.05"
+        app:layout_constraintTop_toTopOf="@id/reg_h_0.15"
+        app:srcCompat="@drawable/ic_baseline_error_outline_24"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/reg_in_valid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="7"
+        android:hint="请输入验证码"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="18dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/reg_pic_valid"
+        app:layout_constraintStart_toStartOf="@id/reg_v_0.25"
+        app:layout_constraintTop_toTopOf="@id/reg_pic_valid" />
+
+    <TextView
+        android:id="@+id/reg_btn_valid"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/log_rectangle_4_8"
+        android:gravity="center"
+        android:text="发送 "
+        android:textSize="14dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toTopOf="@id/reg_h_0.25"
+        app:layout_constraintEnd_toStartOf="@id/reg_v_0.95"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@id/reg_in_valid"
+        app:layout_constraintTop_toTopOf="@id/reg_h_0.15" />
+
+    <ImageView
+        android:id="@+id/reg_pic_pwd"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toTopOf="@id/reg_h_0.35"
+        app:layout_constraintEnd_toStartOf="@id/reg_v_0.25"
+        app:layout_constraintStart_toStartOf="@id/reg_v_0.05"
+        app:layout_constraintTop_toTopOf="@id/reg_h_0.25"
+        app:srcCompat="@drawable/ic_baseline_error_outline_24"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/reg_in_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="18dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/reg_pic_pwd"
+        app:layout_constraintStart_toStartOf="@id/reg_v_0.25"
+        app:layout_constraintTop_toTopOf="@id/reg_pic_pwd" />
+
+    <Button
+        android:id="@+id/reg_btn_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/log_rectangle_4_8"
+        android:text="注册"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/reg_v_0.95"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/reg_v_0.05"
+        app:layout_constraintTop_toTopOf="@id/reg_h_0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_v_0.05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_v_0.15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_v_0.25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_v_0.95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_h_0.05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.051983584" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_h_0.15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_h_0.25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_h_0.35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_h_0.45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4514364" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_h_0.55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

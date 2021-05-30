@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Live.iml" filepath="$PROJECT_DIR$/.idea/modules/Live.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Live.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Live.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Live.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Live.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zhibo/Live.zhibo.iml" filepath="$PROJECT_DIR$/.idea/modules/zhibo/Live.zhibo.iml" />
+    </modules>
+  </component>
+</project>
